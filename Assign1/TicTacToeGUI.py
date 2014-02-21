@@ -7,8 +7,8 @@ Created on Jan 28, 2014
 import  wx
 import random
 import time
-from ABSearch import NextAction, Utility, PlayerAction, AlgInit
-# from GreedySearch import NextAction, Utility, PlayerAction, AlgInit
+# from ABSearch import NextAction, Utility, PlayerAction, AlgInit
+from GreedySearch import NextAction, Utility, PlayerAction, AlgInit
 #---------------------------------------------------------------------------
 
 class MyFrame(wx.Frame):
