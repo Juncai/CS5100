@@ -92,14 +92,14 @@ class WumpusMap(object):
                         self.get_content(_x, y).remove('W')
                         for nx, ny in self.neighbor(_x, y):
                             self.get_content(nx, ny).remove('S')
-                        return 'Hit'
+                        return 'Scream'
             elif x < tx:
                 for _x in range(x+1, self._width):
                     if 'W' in self.get_content(_x, y):
                         self.get_content(_x, y).remove('W')
                         for nx, ny in self.neighbor(_x, y):
                             self.get_content(nx, ny).remove('S')
-                        return 'Hit'
+                        return 'Scream'
         if y != ty:
             if y > ty:
                 for _y in range(0, y):
@@ -107,14 +107,14 @@ class WumpusMap(object):
                         self.get_content(x, _y).remove('W')
                         for nx, ny in self.neighbor(x, _y):
                             self.get_content(nx, ny).remove('S')
-                        return 'Hit'
+                        return 'Scream'
             elif y < ty:
                 for _y in range(y+1, self._height):
                     if 'W' in self.get_content(x, _y):
                         self.get_content(x, _y).remove('W')
                         for nx, ny in self.neighbor(x, _y):
                             self.get_content(nx, ny).remove('S')
-                        return 'Hit'
+                        return 'Scream'
         return 'Miss'
         
         

@@ -67,11 +67,7 @@ def buildmap(filename):
     fptr.close()
     return (wumpusmap, agent_location, goal)
 
-def mdistance(square, goal):
-    """
-    Return Manhattan distance between given square and the goal
-    """
-    return abs(goal[0] - square[0]) + abs(goal[1] - square[1])
+
 
 def initassumption():
     s = 'all x all y all a all b adjacent((x, y), (a,b)) <->'

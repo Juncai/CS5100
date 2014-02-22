@@ -3,7 +3,17 @@ Created on Feb 14, 2014
 
 @author: Jon
 '''
-from jon.assign2.prover9 import Prover9
+from prover9 import Prover9
+
+
+
+class test1(object):
+    def __init__(self,a=0):
+        self.a = a
+    
+    def setA(self,a):
+        self.a = a
+
 
 if __name__ == '__main__':
 #     filename = 'F:\\Program Files (x86)\\Prover9-Mace4\\bin-win32\\prover9.exe'
@@ -34,7 +44,22 @@ if __name__ == '__main__':
 #     print(dict[0])
 #     dict[0].append('one')
 #     print(dict[0][0])
-    for i in range(1, 10):
-        if i == 4:
-            break
-        print(i)
+#     for i in range(1, 10):
+#         if i == 4:
+#             break
+#         print(i)
+#     a = [(1,2), (2,1)]
+#     print(a[0][1])
+#     b = test1(1)
+#     print(b.a)
+#     b.a = 10
+#     print(b.a)
+#     b.setA(100)
+#     print(b.a)
+    a = []
+    for i in range(1,10):
+        a.append(i)
+    for i in range(1,10):
+        print(a.pop())
+    
+    
